@@ -25,7 +25,7 @@ nav {
 }
 .img-logo {
     width: 60px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 .nav-links {
     display: flex;    
@@ -69,10 +69,15 @@ nav {
 .context {
     color: rgb(233, 233, 233);
     font-family: 'Bebas Neue', cursive;
-    letter-spacing: 15px;
 }
 .context p, .context h1 {
     text-align: center;
+}
+.context h1 {
+    letter-spacing: 15px;
+}
+.context p {
+    letter-spacing: 8px;
 }
 
 
@@ -86,10 +91,6 @@ nav {
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
-    }
-    .img-logo {
-        width: 35px;
-        padding: 5px;
     }
     .nav-links {
         position: absolute;
@@ -112,6 +113,17 @@ nav {
         cursor: pointer;
     }
     
+}
+
+@media screen and  (max-width: 307px) {
+    .context h1 {
+        font-size: 23px;
+        letter-spacing: 5px;
+    }
+    .context p {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
 }
 
 .nav-active {
