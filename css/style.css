@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+}
+
+nav {
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #313139;
+    font-family: 'Poppins', sans-serif;
+}
+.logo {
+    color: rgb(233, 233, 233);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 18px;
+    display: flex;    
+    align-items: center;    
+}
+.img-logo {
+    width: 60px;
+    padding: 10px;
+}
+.nav-links {
+    display: flex;    
+    justify-content: space-around;
+    width: 35%;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {    
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: rgb(233, 233, 233);
+    transition: all 0.3s ease;
+}
+
+.bg {
+    background-image: url('https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9jdXN8ZW58MHx8MHx8&w=1000&q=80');
+    width: 100%;
+    min-height: 92vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.context {
+    color: rgb(233, 233, 233);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 15px;
+}
+.context p, .context h1 {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .img-logo {
+        width: 35px;
+        padding: 5px;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #313139;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    
+}
+
+.nav-active {
+    transform: translateX(0%);
+    display: flex;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
