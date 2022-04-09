@@ -115,7 +115,7 @@ nav {
     
 }
 
-@media screen and  (max-width: 307px) {
+@media screen and  (max-width: 550px) {
     .context h1 {
         font-size: 23px;
         letter-spacing: 5px;
