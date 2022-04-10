@@ -12,7 +12,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #313139;
+    background-color: #26262b;
     font-family: 'Poppins', sans-serif;
 }
 .logo {
@@ -55,7 +55,7 @@ nav {
 }
 
 .bg {
-    background-image: url('https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9jdXN8ZW58MHx8MHx8&w=1000&q=80');
+    background-image: url(../images/raining.gif);
     width: 100%;
     min-height: 92vh;
     background-repeat: no-repeat;
@@ -72,6 +72,7 @@ nav {
 }
 .context p, .context h1 {
     text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 .context h1 {
     letter-spacing: 15px;
