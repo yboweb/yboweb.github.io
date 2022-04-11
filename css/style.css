@@ -25,7 +25,6 @@ nav {
 }
 .img-logo {
     width: 60px;
-    /* padding: 10px; */
 }
 .nav-links {
     display: flex;    
@@ -54,37 +53,99 @@ nav {
     transition: all 0.3s ease;
 }
 
-.bg {
-    background-image: url(../images/raining.gif);
-    width: 100%;
-    min-height: 92vh;
+.parallax {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;  
+    background-attachment: fixed;
+}
+
+
+.home {
+    background-image: url(../images/raining.gif);
+    min-height: 92vh;
     
     display: grid;
     justify-content: center;
     align-items: center;
 }
-.context {
+.context-home {
     color: rgb(233, 233, 233);
     font-family: 'Bebas Neue', cursive;
 }
-.context p, .context h1 {
+.context-home p, .context-home h1 {
     text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
-.context h1 {
+.context-home h1 {
     letter-spacing: 15px;
 }
-.context p {
+.context-home p {
     letter-spacing: 8px;
+}
+
+
+.about {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.context-about h2 {
+    letter-spacing: 10px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 50px;
+    color: #313139;
+    text-align: center;
+}
+.context-about div {
+    margin: 10px 400px 30px 400px;
+    text-align: justify;
+
+    display: flex;
+    justify-content: space-around;
+}
+.context-about-div2 img{
+    height: 30vh;
+}
+.context-about-div2 img, .context-about-div2 p {
+    margin: 30px;
+}
+
+
+.portfolio {
+    min-height: 100vh;
+}
+.portfolio .p-image {
+    background-image: url(../images/ybo.jpg);
+    min-height: 30vh;
+
+}
+
+
+@media screen and  (max-width: 1500px) {
+    .context-about div {
+        margin: 10px 250px 30px 250px;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .context-about div {
+        margin: 10px 100px 30px 100px;
+    }
 }
 
 
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .context-about div {
+        margin: 10px 50px 10px 50px;
     }
 }
 
@@ -113,19 +174,34 @@ nav {
         display: block;
         cursor: pointer;
     }
-    
+
+    .context-about div {
+        display: grid;
+        justify-content: center;
+    }
+    .about .context-about-div1{
+        display: none;
+    }
+
+    .context-about-div2 img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
+
 @media screen and  (max-width: 550px) {
-    .context h1 {
+    .context-home h1 {
         font-size: 23px;
         letter-spacing: 5px;
     }
-    .context p {
+    .context-home p {
         font-size: 13px;
         letter-spacing: 3px;
     }
 }
+
 
 .nav-active {
     transform: translateX(0%);
