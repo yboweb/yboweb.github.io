@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hotdog {
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+        }
+        .active {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <ul class="hotdog">
+        <li><a href="#">click me</a></li>
+        <li><a href="#">click me 2</a></li>
+        <li><a href="#">click me 3</a></li>
+    </ul>
+    <!-- <div class="hotdog">
+        
+    </div> -->
+
+    <script>
+        const navSlide = function(){
+            const nav = document.querySelector('.hotdog');
+            const navLinks = document.querySelectorAll('.hotdog li');
+            // const navLink = document.querySelectorAll('.hotdog a');
+
+            // nav.addEventListener('click', () => {
+            //     nav.classList.toggle('active');
+
+                
+                
+            // });
+            navLinks.forEach((links, index) => {
+                console.log(index);
+                navLinks[index].addEventListener('click', function(){
+                    nav.classList.toggle('active');
+                });
+            });
+            
+        };
+
+        navSlide();
+    </script>
+</body>
+</html>
