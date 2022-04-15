@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear {
+    clear: both;
+}
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+    padding: 2rem 0rem;
+}
+label {
+    font-size: 1.5rem;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+button {
+    background: rgb(34, 129, 153); 
+    padding: 1rem 3rem;
+    color: white;
+    border: .1rem solid rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+nav {
+    background: rgb(34, 129, 153);    
+    padding: 2rem; 
+}
+nav h1 {
+    float: left;
+    color: white
+}
+nav ul {
+    float: right;
+}
+nav li {
+    float: left;
+    margin: 0px 3rem;
+}
+
+.front-section {
+    background-image: url(pexels-nathan-cowley-1300402.jpg);
+    background-position: center;
+    background-size: cover;    
+    height: 60rem;
+    text-align: center;
+}
+.front-section h1,
+.front-section h2 {    
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+.front-section h1{
+    padding-top: 20rem;
+}
+
+.contact-section {
+    text-align: center;
+}
+.contact-section h2{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+form label {
+    margin: 1.5rem 0;
+    display: block;
+}
+form input,
+form textarea {
+    display: block;
+    margin: auto;
+    width: 40rem; 
+    padding: .3rem 0;   
+}
+
+
+.contact-section button {
+    margin: 1.5rem 0;
+    width: 40rem;
+}
