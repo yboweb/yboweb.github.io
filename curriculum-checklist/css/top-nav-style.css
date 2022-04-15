@@ -1,0 +1,34 @@
+.container {
+  	margin-top: 20px;  		
+}
+.navbar-inverse {
+  	background-color: #198754;
+  	border-style: none;  	
+}
+.navbar-brand {
+  	font-family: 'Luckiest Guy', cursive;  		
+}
+.navbar-inverse .navbar-brand {
+   	color: whitesmoke;
+    font-size: 30px;
+	}
+
+#myNavbar a {
+	color: whitesmoke;		
+}
+#myNavbar a:hover{
+	color: white;
+}
+.navbar-toggle,
+#myNavbar {
+	border-style: none;
+}
+.navbar-inverse img {
+	width: 40px;
+	float: left;
+	transform: translate(-8px, -10px);
+}
+.navbar-inverse .active {
+	background: none !important;
+	color: white !important;
+}

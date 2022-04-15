@@ -1,0 +1,44 @@
+@import "top-nav-style.css";
+
+.c-cont ul {
+	list-style: none;
+	margin: 0;
+}
+.c-cont li {	
+	float: left;
+	margin: 10px;
+}
+.c-cont input {
+	width: 360px;
+}
+.c-cont label, .c-cont input {	
+	display: block;
+}
+
+.info-form {
+	border: 1px solid black;
+}
+
+
+.info-form,
+.table-cont  {
+	display: grid;
+	place-items: center;
+}
+.f-clear {
+	clear: both;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;	
+	width: 100%;
+
+	margin: 10px;		
+}
+.table-cont td, .table-cont th {
+	border: 1px solid black;
+	padding: 8px;	
+	
+	text-align: center;
+}

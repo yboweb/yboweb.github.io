@@ -1,0 +1,11 @@
+@import "top-nav-style.css";
+
+.hatdog {
+	background-image: url(https://mnhssh.files.wordpress.com/2017/09/cropped-cropped-unnamed-file1.jpg);
+
+	width: 100%;
+	height: 500px;
+
+	background-position: -150px -30px;
+	background-repeat: no-repeat;		
+}

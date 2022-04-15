@@ -1,0 +1,70 @@
+* {
+	font-family: Arial;	
+}
+body {
+	margin: 0;
+	top: 0;
+}
+h1 {
+	color: white;
+	margin-left: 20px;
+	font-family: georgia;	
+}
+.topNav {
+			/*padding: 15px 0 15px 15px;*/
+			background-color: #292624;
+			overflow: hidden;
+			margin-bottom: 80px;
+}
+.container {
+	margin: 0 auto;
+	width: 1072px;
+	height: 500px;
+	border: 3px solid #3F3D3B;
+	border-radius: 10px;
+}
+img {
+	float: right;
+	margin: 100px 100px 0px 0px;
+	border: 2px solid #555251;
+	border-radius: 10px;
+}
+ul, li {
+	text-decoration: none;
+	list-style-type: none;
+}
+.container li {
+	padding-bottom: 50px;
+}
+.container ul {
+	margin-top: 50px;
+	margin-left: 50px;
+}
+label {
+	display: block;
+	font-size: 20px;
+	opacity: .75;
+	/*text-align: right;*/
+}
+input[type=text] {
+	width: 500px;
+	height: 25px;
+	float: left;
+	margin-right: 20px;
+	font-size: 20px;
+}
+#label_rfid, #label_p_no {
+	width: 236px;
+	float: left;
+}
+#label_p_no {
+	margin-left: 29px;
+}
+#rfid, #p_no {
+	width: 236px;
+	margin-bottom: 15px;
+}
+#btn {
+	width: 508px;
+	height: 30px;
+}
